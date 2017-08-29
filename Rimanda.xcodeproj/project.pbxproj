@@ -1,0 +1,521 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C05148A1E6DC189003FD33F /* MonitorInterventiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0514891E6DC189003FD33F /* MonitorInterventiViewController.swift */; };
+		9C05148C1E6DC459003FD33F /* MonitorInterventiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C05148B1E6DC459003FD33F /* MonitorInterventiTableViewCell.swift */; };
+		9C26C3E21E1555F900FDBCF6 /* LocalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C3E11E1555F900FDBCF6 /* LocalController.swift */; };
+		9C26C3E41E1574BF00FDBCF6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C26C3E31E1574BF00FDBCF6 /* SettingsViewController.swift */; };
+		9C2D6C0A1E12B2F600D725E2 /* KeyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D6C091E12B2F600D725E2 /* KeyUserDefaults.swift */; };
+		9C2D6C111E12B6C000D725E2 /* DOAlertController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D6C101E12B6C000D725E2 /* DOAlertController.swift */; };
+		9C2D6C3B1E12C94000D725E2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2D6C3A1E12C94000D725E2 /* LoginViewController.swift */; };
+		9C7225671E24F31900C4B1EE /* DrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7225661E24F31900C4B1EE /* DrawView.swift */; };
+		9C7225691E24F3A200C4B1EE /* Line.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7225681E24F3A200C4B1EE /* Line.swift */; };
+		9C72256B1E24F4CF00C4B1EE /* FirmaTecnicoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C72256A1E24F4CF00C4B1EE /* FirmaTecnicoViewController.swift */; };
+		9CAC2BD11E0AD895008467D2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC2BD01E0AD895008467D2 /* AppDelegate.swift */; };
+		9CAC2BD61E0AD895008467D2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC2BD41E0AD895008467D2 /* Main.storyboard */; };
+		9CAC2BD91E0AD895008467D2 /* Rimanda.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CAC2BD71E0AD895008467D2 /* Rimanda.xcdatamodeld */; };
+		9CAC2BDB1E0AD895008467D2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC2BDA1E0AD895008467D2 /* Assets.xcassets */; };
+		9CAC2BDE1E0AD895008467D2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CAC2BDC1E0AD895008467D2 /* LaunchScreen.storyboard */; };
+		9CC703731E6F0DD800050E7C /* ClickableTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC703721E6F0DD800050E7C /* ClickableTextField.swift */; };
+		9CC703751E6F10D700050E7C /* CalendarAddedDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC703741E6F10D700050E7C /* CalendarAddedDelegate.swift */; };
+		9CC703771E6F122E00050E7C /* CalendarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC703761E6F122E00050E7C /* CalendarTableViewController.swift */; };
+		9CC703791E6F13DA00050E7C /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC703781E6F13DA00050E7C /* UIViewExtensions.swift */; };
+		9CC79DBB1E8BC35A002EF7DD /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB11E8BC35A002EF7DD /* UIButtonX.swift */; };
+		9CC79DBC1E8BC35A002EF7DD /* UIImageViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB21E8BC35A002EF7DD /* UIImageViewX.swift */; };
+		9CC79DBD1E8BC35A002EF7DD /* UILabelX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB31E8BC35A002EF7DD /* UILabelX.swift */; };
+		9CC79DBE1E8BC35A002EF7DD /* UISliderX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB41E8BC35A002EF7DD /* UISliderX.swift */; };
+		9CC79DBF1E8BC35A002EF7DD /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB51E8BC35A002EF7DD /* UITextFieldX.swift */; };
+		9CC79DC01E8BC35A002EF7DD /* UIViewAnchorPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB61E8BC35A002EF7DD /* UIViewAnchorPoint.swift */; };
+		9CC79DC11E8BC35A002EF7DD /* UIViewControllerX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB71E8BC35A002EF7DD /* UIViewControllerX.swift */; };
+		9CC79DC21E8BC35A002EF7DD /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB81E8BC35A002EF7DD /* UIViewX.swift */; };
+		9CC79DC31E8BC35A002EF7DD /* UIViewXRadialGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DB91E8BC35A002EF7DD /* UIViewXRadialGradient.swift */; };
+		9CC79DC41E8BC35A002EF7DD /* UIVisualEffectViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC79DBA1E8BC35A002EF7DD /* UIVisualEffectViewX.swift */; };
+		9CD4BBAE1E3601E60042B7CC /* MyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD4BBAD1E3601E60042B7CC /* MyTextField.swift */; };
+		9CE2EE1E1E13F5E900C4BA6E /* Clienti+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE1C1E13F5E900C4BA6E /* Clienti+CoreDataClass.swift */; };
+		9CE2EE1F1E13F5E900C4BA6E /* Clienti+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE1D1E13F5E900C4BA6E /* Clienti+CoreDataProperties.swift */; };
+		9CE2EE2A1E13FBC000C4BA6E /* Commesse+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE281E13FBC000C4BA6E /* Commesse+CoreDataClass.swift */; };
+		9CE2EE2B1E13FBC000C4BA6E /* Commesse+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE291E13FBC000C4BA6E /* Commesse+CoreDataProperties.swift */; };
+		9CE2EE2E1E13FBEA00C4BA6E /* Tecnici+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE2C1E13FBEA00C4BA6E /* Tecnici+CoreDataClass.swift */; };
+		9CE2EE2F1E13FBEA00C4BA6E /* Tecnici+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE2D1E13FBEA00C4BA6E /* Tecnici+CoreDataProperties.swift */; };
+		9CE2EE321E13FC1500C4BA6E /* Users+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE301E13FC1500C4BA6E /* Users+CoreDataClass.swift */; };
+		9CE2EE331E13FC1500C4BA6E /* Users+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE311E13FC1500C4BA6E /* Users+CoreDataProperties.swift */; };
+		9CE2EE361E13FC3400C4BA6E /* Interventi+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE341E13FC3400C4BA6E /* Interventi+CoreDataClass.swift */; };
+		9CE2EE371E13FC3400C4BA6E /* Interventi+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE2EE351E13FC3400C4BA6E /* Interventi+CoreDataProperties.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9C0514891E6DC189003FD33F /* MonitorInterventiViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorInterventiViewController.swift; sourceTree = "<group>"; };
+		9C05148B1E6DC459003FD33F /* MonitorInterventiTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MonitorInterventiTableViewCell.swift; sourceTree = "<group>"; };
+		9C26C3E11E1555F900FDBCF6 /* LocalController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalController.swift; sourceTree = "<group>"; };
+		9C26C3E31E1574BF00FDBCF6 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		9C2D6C091E12B2F600D725E2 /* KeyUserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeyUserDefaults.swift; path = Rimanda/KeyUserDefaults.swift; sourceTree = "<group>"; };
+		9C2D6C101E12B6C000D725E2 /* DOAlertController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DOAlertController.swift; path = Rimanda/DOAlertController.swift; sourceTree = "<group>"; };
+		9C2D6C3A1E12C94000D725E2 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		9C7225661E24F31900C4B1EE /* DrawView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DrawView.swift; sourceTree = "<group>"; };
+		9C7225681E24F3A200C4B1EE /* Line.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Line.swift; sourceTree = "<group>"; };
+		9C72256A1E24F4CF00C4B1EE /* FirmaTecnicoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirmaTecnicoViewController.swift; sourceTree = "<group>"; };
+		9CAC2BCD1E0AD895008467D2 /* Rimanda.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Rimanda.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CAC2BD01E0AD895008467D2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Rimanda/AppDelegate.swift; sourceTree = "<group>"; };
+		9CAC2BD51E0AD895008467D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9CAC2BD81E0AD895008467D2 /* Rimanda.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Rimanda.xcdatamodel; sourceTree = "<group>"; };
+		9CAC2BDA1E0AD895008467D2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9CAC2BDD1E0AD895008467D2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9CAC2BDF1E0AD895008467D2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CC703721E6F0DD800050E7C /* ClickableTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClickableTextField.swift; sourceTree = "<group>"; };
+		9CC703741E6F10D700050E7C /* CalendarAddedDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarAddedDelegate.swift; sourceTree = "<group>"; };
+		9CC703761E6F122E00050E7C /* CalendarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarTableViewController.swift; sourceTree = "<group>"; };
+		9CC703781E6F13DA00050E7C /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
+		9CC79DB11E8BC35A002EF7DD /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		9CC79DB21E8BC35A002EF7DD /* UIImageViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewX.swift; sourceTree = "<group>"; };
+		9CC79DB31E8BC35A002EF7DD /* UILabelX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelX.swift; sourceTree = "<group>"; };
+		9CC79DB41E8BC35A002EF7DD /* UISliderX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UISliderX.swift; sourceTree = "<group>"; };
+		9CC79DB51E8BC35A002EF7DD /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		9CC79DB61E8BC35A002EF7DD /* UIViewAnchorPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewAnchorPoint.swift; sourceTree = "<group>"; };
+		9CC79DB71E8BC35A002EF7DD /* UIViewControllerX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerX.swift; sourceTree = "<group>"; };
+		9CC79DB81E8BC35A002EF7DD /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		9CC79DB91E8BC35A002EF7DD /* UIViewXRadialGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewXRadialGradient.swift; sourceTree = "<group>"; };
+		9CC79DBA1E8BC35A002EF7DD /* UIVisualEffectViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVisualEffectViewX.swift; sourceTree = "<group>"; };
+		9CD4BBAD1E3601E60042B7CC /* MyTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTextField.swift; sourceTree = "<group>"; };
+		9CE2EE1C1E13F5E900C4BA6E /* Clienti+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Clienti+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CE2EE1D1E13F5E900C4BA6E /* Clienti+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Clienti+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CE2EE281E13FBC000C4BA6E /* Commesse+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commesse+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CE2EE291E13FBC000C4BA6E /* Commesse+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Commesse+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CE2EE2C1E13FBEA00C4BA6E /* Tecnici+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tecnici+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CE2EE2D1E13FBEA00C4BA6E /* Tecnici+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Tecnici+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CE2EE301E13FC1500C4BA6E /* Users+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CE2EE311E13FC1500C4BA6E /* Users+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Users+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		9CE2EE341E13FC3400C4BA6E /* Interventi+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interventi+CoreDataClass.swift"; sourceTree = "<group>"; };
+		9CE2EE351E13FC3400C4BA6E /* Interventi+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Interventi+CoreDataProperties.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9CAC2BCA1E0AD895008467D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C2D6C0B1E12B30200D725E2 /* utils */ = {
+			isa = PBXGroup;
+			children = (
+				9CC79DB01E8BC35A002EF7DD /* DesignableX */,
+				9CC703741E6F10D700050E7C /* CalendarAddedDelegate.swift */,
+				9CC703721E6F0DD800050E7C /* ClickableTextField.swift */,
+				9CD4BBAD1E3601E60042B7CC /* MyTextField.swift */,
+				9C2D6C101E12B6C000D725E2 /* DOAlertController.swift */,
+				9C2D6C091E12B2F600D725E2 /* KeyUserDefaults.swift */,
+			);
+			name = utils;
+			sourceTree = "<group>";
+		};
+		9C2D6C0C1E12B32400D725E2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC2BD41E0AD895008467D2 /* Main.storyboard */,
+				9CFC20141E311D0400FAB6B1 /* tabelViewCell */,
+				9CC703761E6F122E00050E7C /* CalendarTableViewController.swift */,
+				9C0514891E6DC189003FD33F /* MonitorInterventiViewController.swift */,
+				9C72256A1E24F4CF00C4B1EE /* FirmaTecnicoViewController.swift */,
+				9CC703781E6F13DA00050E7C /* UIViewExtensions.swift */,
+				9C7225681E24F3A200C4B1EE /* Line.swift */,
+				9C7225661E24F31900C4B1EE /* DrawView.swift */,
+				9C26C3E31E1574BF00FDBCF6 /* SettingsViewController.swift */,
+				9C2D6C3A1E12C94000D725E2 /* LoginViewController.swift */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		9C2D6C0D1E12B33000D725E2 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				9C26C3E11E1555F900FDBCF6 /* LocalController.swift */,
+			);
+			name = controllers;
+			sourceTree = "<group>";
+		};
+		9C2D6C0E1E12B34000D725E2 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				9CE2EE341E13FC3400C4BA6E /* Interventi+CoreDataClass.swift */,
+				9CE2EE351E13FC3400C4BA6E /* Interventi+CoreDataProperties.swift */,
+				9CE2EE301E13FC1500C4BA6E /* Users+CoreDataClass.swift */,
+				9CE2EE311E13FC1500C4BA6E /* Users+CoreDataProperties.swift */,
+				9CE2EE2C1E13FBEA00C4BA6E /* Tecnici+CoreDataClass.swift */,
+				9CE2EE2D1E13FBEA00C4BA6E /* Tecnici+CoreDataProperties.swift */,
+				9CE2EE281E13FBC000C4BA6E /* Commesse+CoreDataClass.swift */,
+				9CE2EE291E13FBC000C4BA6E /* Commesse+CoreDataProperties.swift */,
+				9CE2EE1C1E13F5E900C4BA6E /* Clienti+CoreDataClass.swift */,
+				9CE2EE1D1E13F5E900C4BA6E /* Clienti+CoreDataProperties.swift */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		9C2D6C0F1E12B35900D725E2 /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
+		9CAC2BC41E0AD895008467D2 = {
+			isa = PBXGroup;
+			children = (
+				9CAC2BD01E0AD895008467D2 /* AppDelegate.swift */,
+				9C2D6C0F1E12B35900D725E2 /* protocols */,
+				9C2D6C0E1E12B34000D725E2 /* models */,
+				9C2D6C0D1E12B33000D725E2 /* controllers */,
+				9C2D6C0C1E12B32400D725E2 /* UI */,
+				9C2D6C0B1E12B30200D725E2 /* utils */,
+				9CAC2BCF1E0AD895008467D2 /* Rimanda */,
+				9CAC2BCE1E0AD895008467D2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9CAC2BCE1E0AD895008467D2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC2BCD1E0AD895008467D2 /* Rimanda.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9CAC2BCF1E0AD895008467D2 /* Rimanda */ = {
+			isa = PBXGroup;
+			children = (
+				9CAC2BDA1E0AD895008467D2 /* Assets.xcassets */,
+				9CAC2BDC1E0AD895008467D2 /* LaunchScreen.storyboard */,
+				9CAC2BDF1E0AD895008467D2 /* Info.plist */,
+				9CAC2BD71E0AD895008467D2 /* Rimanda.xcdatamodeld */,
+			);
+			path = Rimanda;
+			sourceTree = "<group>";
+		};
+		9CC79DB01E8BC35A002EF7DD /* DesignableX */ = {
+			isa = PBXGroup;
+			children = (
+				9CC79DB11E8BC35A002EF7DD /* UIButtonX.swift */,
+				9CC79DB21E8BC35A002EF7DD /* UIImageViewX.swift */,
+				9CC79DB31E8BC35A002EF7DD /* UILabelX.swift */,
+				9CC79DB41E8BC35A002EF7DD /* UISliderX.swift */,
+				9CC79DB51E8BC35A002EF7DD /* UITextFieldX.swift */,
+				9CC79DB61E8BC35A002EF7DD /* UIViewAnchorPoint.swift */,
+				9CC79DB71E8BC35A002EF7DD /* UIViewControllerX.swift */,
+				9CC79DB81E8BC35A002EF7DD /* UIViewX.swift */,
+				9CC79DB91E8BC35A002EF7DD /* UIViewXRadialGradient.swift */,
+				9CC79DBA1E8BC35A002EF7DD /* UIVisualEffectViewX.swift */,
+			);
+			name = DesignableX;
+			path = "../../PROGETTI XCODE DI LEO E VITTO/DesignableX";
+			sourceTree = "<group>";
+		};
+		9CFC20141E311D0400FAB6B1 /* tabelViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9C05148B1E6DC459003FD33F /* MonitorInterventiTableViewCell.swift */,
+			);
+			name = tabelViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9CAC2BCC1E0AD895008467D2 /* Rimanda */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9CAC2BE21E0AD895008467D2 /* Build configuration list for PBXNativeTarget "Rimanda" */;
+			buildPhases = (
+				9CAC2BC91E0AD895008467D2 /* Sources */,
+				9CAC2BCA1E0AD895008467D2 /* Frameworks */,
+				9CAC2BCB1E0AD895008467D2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Rimanda;
+			productName = Rimanda;
+			productReference = 9CAC2BCD1E0AD895008467D2 /* Rimanda.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9CAC2BC51E0AD895008467D2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "leonardo mappa";
+				TargetAttributes = {
+					9CAC2BCC1E0AD895008467D2 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = B432TGM4P5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 9CAC2BC81E0AD895008467D2 /* Build configuration list for PBXProject "Rimanda" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9CAC2BC41E0AD895008467D2;
+			productRefGroup = 9CAC2BCE1E0AD895008467D2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9CAC2BCC1E0AD895008467D2 /* Rimanda */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9CAC2BCB1E0AD895008467D2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CAC2BDE1E0AD895008467D2 /* LaunchScreen.storyboard in Resources */,
+				9CAC2BDB1E0AD895008467D2 /* Assets.xcassets in Resources */,
+				9CAC2BD61E0AD895008467D2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9CAC2BC91E0AD895008467D2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9CC703751E6F10D700050E7C /* CalendarAddedDelegate.swift in Sources */,
+				9CAC2BD11E0AD895008467D2 /* AppDelegate.swift in Sources */,
+				9CC79DBE1E8BC35A002EF7DD /* UISliderX.swift in Sources */,
+				9CC79DC01E8BC35A002EF7DD /* UIViewAnchorPoint.swift in Sources */,
+				9C2D6C111E12B6C000D725E2 /* DOAlertController.swift in Sources */,
+				9CC703731E6F0DD800050E7C /* ClickableTextField.swift in Sources */,
+				9CC79DBD1E8BC35A002EF7DD /* UILabelX.swift in Sources */,
+				9CD4BBAE1E3601E60042B7CC /* MyTextField.swift in Sources */,
+				9CE2EE321E13FC1500C4BA6E /* Users+CoreDataClass.swift in Sources */,
+				9CE2EE361E13FC3400C4BA6E /* Interventi+CoreDataClass.swift in Sources */,
+				9CC703771E6F122E00050E7C /* CalendarTableViewController.swift in Sources */,
+				9CE2EE331E13FC1500C4BA6E /* Users+CoreDataProperties.swift in Sources */,
+				9CE2EE2B1E13FBC000C4BA6E /* Commesse+CoreDataProperties.swift in Sources */,
+				9CE2EE1F1E13F5E900C4BA6E /* Clienti+CoreDataProperties.swift in Sources */,
+				9CE2EE371E13FC3400C4BA6E /* Interventi+CoreDataProperties.swift in Sources */,
+				9C7225691E24F3A200C4B1EE /* Line.swift in Sources */,
+				9CC79DC21E8BC35A002EF7DD /* UIViewX.swift in Sources */,
+				9CE2EE2F1E13FBEA00C4BA6E /* Tecnici+CoreDataProperties.swift in Sources */,
+				9C26C3E21E1555F900FDBCF6 /* LocalController.swift in Sources */,
+				9C2D6C3B1E12C94000D725E2 /* LoginViewController.swift in Sources */,
+				9C2D6C0A1E12B2F600D725E2 /* KeyUserDefaults.swift in Sources */,
+				9C26C3E41E1574BF00FDBCF6 /* SettingsViewController.swift in Sources */,
+				9CC79DC31E8BC35A002EF7DD /* UIViewXRadialGradient.swift in Sources */,
+				9CE2EE1E1E13F5E900C4BA6E /* Clienti+CoreDataClass.swift in Sources */,
+				9CC79DBB1E8BC35A002EF7DD /* UIButtonX.swift in Sources */,
+				9CC79DC41E8BC35A002EF7DD /* UIVisualEffectViewX.swift in Sources */,
+				9CC79DBC1E8BC35A002EF7DD /* UIImageViewX.swift in Sources */,
+				9CE2EE2E1E13FBEA00C4BA6E /* Tecnici+CoreDataClass.swift in Sources */,
+				9C05148C1E6DC459003FD33F /* MonitorInterventiTableViewCell.swift in Sources */,
+				9CC703791E6F13DA00050E7C /* UIViewExtensions.swift in Sources */,
+				9C7225671E24F31900C4B1EE /* DrawView.swift in Sources */,
+				9C05148A1E6DC189003FD33F /* MonitorInterventiViewController.swift in Sources */,
+				9CC79DC11E8BC35A002EF7DD /* UIViewControllerX.swift in Sources */,
+				9CAC2BD91E0AD895008467D2 /* Rimanda.xcdatamodeld in Sources */,
+				9CC79DBF1E8BC35A002EF7DD /* UITextFieldX.swift in Sources */,
+				9CE2EE2A1E13FBC000C4BA6E /* Commesse+CoreDataClass.swift in Sources */,
+				9C72256B1E24F4CF00C4B1EE /* FirmaTecnicoViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9CAC2BD41E0AD895008467D2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CAC2BD51E0AD895008467D2 /* Base */,
+			);
+			name = Main.storyboard;
+			path = Rimanda;
+			sourceTree = "<group>";
+		};
+		9CAC2BDC1E0AD895008467D2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9CAC2BDD1E0AD895008467D2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9CAC2BE01E0AD895008467D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9CAC2BE11E0AD895008467D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9CAC2BE31E0AD895008467D2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B432TGM4P5;
+				INFOPLIST_FILE = Rimanda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.Prismatdi.Rimanda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		9CAC2BE41E0AD895008467D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = B432TGM4P5;
+				INFOPLIST_FILE = Rimanda/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = it.Prismatdi.Rimanda;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9CAC2BC81E0AD895008467D2 /* Build configuration list for PBXProject "Rimanda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAC2BE01E0AD895008467D2 /* Debug */,
+				9CAC2BE11E0AD895008467D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9CAC2BE21E0AD895008467D2 /* Build configuration list for PBXNativeTarget "Rimanda" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9CAC2BE31E0AD895008467D2 /* Debug */,
+				9CAC2BE41E0AD895008467D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CAC2BD71E0AD895008467D2 /* Rimanda.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CAC2BD81E0AD895008467D2 /* Rimanda.xcdatamodel */,
+			);
+			currentVersion = 9CAC2BD81E0AD895008467D2 /* Rimanda.xcdatamodel */;
+			path = Rimanda.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9CAC2BC51E0AD895008467D2 /* Project object */;
+}

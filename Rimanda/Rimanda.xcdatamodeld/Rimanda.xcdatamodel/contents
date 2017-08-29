@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16B2555" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Clienti" representedClassName=".Clienti" syncable="YES">
+        <attribute name="codice" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="indirizzo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="latitudine" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="longitudine" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="ragionesociale" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="commesse" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Commesse" inverseName="cliente" inverseEntity="Commesse" syncable="YES"/>
+    </entity>
+    <entity name="Commesse" representedClassName=".Commesse" syncable="YES">
+        <attribute name="anno" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codicecli" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numero" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="cliente" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Clienti" inverseName="commesse" inverseEntity="Clienti" syncable="YES"/>
+    </entity>
+    <entity name="Interventi" representedClassName=".Interventi" syncable="YES">
+        <attribute name="annoCommessa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="annoTel" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="cancellato" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chiFase" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="chiMo" optional="YES" attributeType="Integer 32" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="codiceCliente" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="codiceTecnico" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="dataFt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataImmissione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataIntervento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="descIntervento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dirChi" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="fatturato" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="impDir" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="importoOra" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="impPro" optional="YES" attributeType="Double" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="km" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mandato" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="monteOre" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroCommessa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroFt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroImmissione" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numeroIntervento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="numeroTel" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numFase" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numImp" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="numMo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="oreFatturate" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="oreIntervento" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="prepagato" optional="YES" attributeType="Integer 32" defaultValueString="0.0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="progetto" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="rinviare" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="sincronizzato" optional="YES" attributeType="Boolean" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="tipoFt" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipoIntervento" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ufficio" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
+    <entity name="Tecnici" representedClassName=".Tecnici" syncable="YES">
+        <attribute name="codice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="descrizione" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="mail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="tipointervento" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Users" inverseName="tecnico" inverseEntity="Users" syncable="YES"/>
+    </entity>
+    <entity name="Users" representedClassName=".Users" syncable="YES">
+        <attribute name="codice" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="password" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="tecnico" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="Tecnici" inverseName="user" inverseEntity="Tecnici" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Clienti" positionX="-36" positionY="45" width="128" height="150"/>
+        <element name="Commesse" positionX="-18" positionY="90" width="128" height="120"/>
+        <element name="Interventi" positionX="0" positionY="117" width="128" height="600"/>
+        <element name="Tecnici" positionX="-54" positionY="18" width="128" height="120"/>
+        <element name="Users" positionX="-63" positionY="-18" width="128" height="105"/>
+    </elements>
+</model>
